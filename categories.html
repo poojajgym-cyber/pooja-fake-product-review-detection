@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Category</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        h2 { margin-bottom: 20px; }
+        .category { margin: 20px; padding: 20px; border: 1px solid #ccc; display: inline-block; border-radius: 10px; }
+        a { text-decoration: none; font-size: 18px; color: #333; }
+        a:hover { color: green; }
+    </style>
+</head>
+<body>
+    <h2>Select a Category</h2>
+    <div class="category"><a href="{{ url_for('review') }}">Costumes</a></div>
+    <div class="category"><a href="{{ url_for('review') }}">Home Appliances</a></div>
+    <div class="category"><a href="{{ url_for('review') }}">Electronics</a></div>
+    <div class="category"><a href="{{ url_for('review') }}">Books</a></div>
+    <div class="category"><a href="{{ url_for('review') }}">Others</a></div>
+    <br><br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
